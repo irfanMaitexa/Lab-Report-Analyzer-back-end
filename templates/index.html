@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Report Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lab Report Assistant</h1>
+        <p>Upload your lab report image to check for anemia.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Description Section for Blood Parameters -->
+        <section class="description">
+            <h2>Understanding Blood Parameters</h2>
+            <ul>
+                <li><strong>Hemoglobin (Hb):</strong> A protein in red blood cells that carries oxygen. Low levels may indicate anemia. <br> <em>രക്തത്തിലെ ഓക്സിജൻ വഹിക്കുന്ന പ്രോട്ടീൻ; കുറഞ്ഞ നില അനീമിയ സൂചിപ്പിക്കുന്നു.</em></li>
+                <li><strong>Mean Corpuscular Volume (MCV):</strong> The average volume of red blood cells. Helps to determine the type of anemia. <br> <em>ചുവന്ന രക്താണുക്കളുടെ ശരാശരി വാല്യം; അനീമിയുടെ തരം നിർണ്ണയിക്കാൻ സഹായിക്കുന്നു.</em></li>
+                <li><strong>MCH:</strong> Mean amount of hemoglobin in a single red blood cell. <br> <em>ഓരോ ചുവന്ന രക്താണുവിനും ഉള്ള ഹീമോഗ്ലോബിൻ പരിമാണം.</em></li>
+                <li><strong>MCHC:</strong> The concentration of hemoglobin in red blood cells. <br> <em>ചുവന്ന രക്താണുക്കളിലെ ഹീമോഗ്ലോബിൻ സാന്ദ്രത.</em></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('../static/images/bg.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    text-align: center;
+}
+
+h1 {
+    color: #dc3545; /* Bootstrap red color for emphasis */
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-size: 2.5em; /* Larger font size for the main title */
+}
+
+h2 {
+    color: #343a40; /* Dark gray for subheadings */
+    margin-bottom: 15px; /* Spacing below subheadings */
+    font-size: 1.5em; /* Slightly larger than normal text */
+}
+
+p {
+    color: #6c757d; /* Bootstrap gray for paragraphs */
+    margin-bottom: 20px; /* Spacing below paragraphs */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px; /* Padding for better touch targets */
+    border: 2px solid #007bff; /* Blue border for the input */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width for better usability */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff; /* Blue button for prominence */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Slightly larger font size for buttons */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue for hover state */
+}
+
+footer {
+    margin-top: 20px; /* Spacing above footer */
+    font-size: 0.9em; /* Smaller font for footer text */
+    color: #6c757d; /* Gray color for footer */
+}
+
+/* Additional styling for error messages */
+.error-message {
+    color: #dc3545; /* Red for error messages */
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 20px 0; /* Spacing above and below */
+}

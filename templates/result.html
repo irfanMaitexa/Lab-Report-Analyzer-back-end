@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>{{ result }}</h2>
+
+        {% if anemia_detected %}
+        <section class="anemia-info">
+            <h3>How to Manage Anemia</h3>
+
+            <p>1. Include foods like spinach, lentils, and beans in your diet. <br> <em>ഇരുമ്പ് സമൃദ്ധമായ ഭക്ഷണങ്ങൾ: ചീര, പയർ,പയർ വിഭവങ്ങൾ എന്നിവ കഴിക്കുക.</em></p>
+            <p>2. Helps in better absorption of iron. Include citrus fruits, tomatoes, and broccoli. <br> <em>വിറ്റാമിൻ C: ഇരുമ്പിന്റെ ഇളകിക്കയറ്റം മെച്ചപ്പെടുത്താൻ പച്ചമുളക്, നാരങ്ങ, മാതളനാരകം എന്നിവ കഴിക്കുക.</em></p>
+            <p>3. Iron supplements may be prescribed by a doctor if required. <br> <em>ഡോക്ടറുടെ നിർദ്ദേശാനുസരണം ഇരുമ്പ് സപ്ലിമെന്റുകൾ കഴിക്കുക.</em></p>
+            <p>4. Rest well to reduce fatigue and manage symptoms. <br> <em>കുറവ് ക്ഷീണം അനുഭവിക്കാൻ സുഖനിദ്ര പാലിക്കുക.</em></p>
+        </section>
+        {% else %}
+        <section class="precautions-info">
+            <h3>Precautionary Steps to Avoid Anemia</h3>
+            <p>1. Eat a balanced diet rich in iron, vitamins, and proteins. <br> <em> സുസ്ഥിതമായ ഭക്ഷണം: ഇരുമ്പ്, വിറ്റാമിനുകൾ, പ്രോട്ടീനുകൾ ഉൾപ്പെടുന്ന ആരോഗ്യകരമായ ഭക്ഷണം കഴിക്കുക.</em></p>
+            <p>2. Avoid Excessive Tea/Coffee. Reduces iron absorption, so limit intake. <br> <em> അതിരൂക്ഷമായ ചായ/കാഫി ഉപേക്ഷിക്കുക: ഇരുമ്പിന്റെ ഇളകിക്കയറ്റം കുറയ്ക്കുന്നു, അതിനാൽ നിയന്ത്രിക്കുക.</em></p>
+            <p>3. Schedule regular blood tests to monitor iron levels. <br> <em> പതിവായി രക്തപരിശോധന നടത്തുക: ഇരുമ്പിന്റെ നില പരിശോധിക്കാൻ.</em></p>
+            <p>4. Drink enough water to support overall health. <br> <em> ശരീരം സമൃദ്ധമായി ജലപാനചെയ്യുക.</em></p>
+        </section>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </div>
+</body>
+</html>

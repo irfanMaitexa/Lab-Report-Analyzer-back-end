@@ -1,0 +1,25 @@
+Flask
+pytesseract
+Pillow
+joblib
+scikit-learn
+
+
+# To install pytesseract
+# Install Tesseract OCR on Your System
+# First, ensure that Tesseract OCR is installed on your system as a standalone application. You can download and install it as follows:
+
+# For Windows:
+
+# Download the Tesseract OCR installer from the Tesseract at UB Mannheim page.
+# Run the installer and follow the prompts to install Tesseract.
+# During installation, note the installation path (usually C:\Program Files\Tesseract-OCR) because you'll need it to set the environment variable.
+# Set Environment Variable (Windows Only)
+# After installing Tesseract, you may need to add its path to your system's environment variables.
+
+# Search for Environment Variables in the Windows search bar.
+# Open "Edit the system environment variables".
+# In the System Properties window, click on "Environment Variables...".
+# Under "System variables," find and select the "Path" variable, then click "Edit...".
+# Click "New" and add the path to the Tesseract installation directory (e.g., C:\Program Files\Tesseract-OCR).
+# Click OK to save the changes.
